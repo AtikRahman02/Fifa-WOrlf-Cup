@@ -1,0 +1,243 @@
+/* fonts */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,600;1,100&family=Open+Sans:wght@500&family=Poppins:wght@500&display=swap');
+/* common style  */
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: #FFFFFF;
+}
+
+/*------------ 
+header style
+-----------  */
+.headers{
+    display: flex;
+    justify-content:center;
+    background-color: #0A0826;
+   
+}
+.head-details{
+    Width :582px;
+    Height :270px;
+    margin-left: 120px;
+    margin-top: 285px;
+    border-radius: 47px;
+}
+.head-details h1{
+    color: #999898;
+    font-weight: 700px;
+}
+.head-details p{
+    color: #cccccc;
+}
+.head-details button{
+    Width :196px;
+    Height: 44px;
+    border-radius: 41px;
+    color: #FFFFFF;
+    background-color: #E02C6D;
+}
+.head-pic{
+   
+    margin-top: 211px;
+    height: 414px;
+    width: 440px;
+}
+/*--------- 
+transfer details style
+--------  */
+
+.second-section{
+    display: flex;
+    
+    
+
+}
+.second-section>h3{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+.schedule{
+    background-color: rgb(0, 0, 0);
+    width: 100%;
+    height: 170px;
+    text-align: center;
+    margin-top: 45px;
+    border-radius: 10px;
+    padding-top: 20px;
+    align-items: center;
+    padding: 40px;
+}
+  
+
+
+.upcomming-schedule{
+    background-color: rgb(0, 0, 0);
+    width: 200px;
+    height: 250px;
+    text-align: center;
+    margin-top: 20px;
+    border-radius: 10px;
+    padding-top: 20px;
+    align-items: center;
+}
+.schedule-button{
+    text-decoration: none;
+}
+
+.blog-button{
+    background-color: rgb(255, 255, 255);
+    width: 168px;
+    margin: 15px;
+    border-radius: 3px;
+    height: 35px;
+}
+
+.blog-button1{
+    background-color: rgb(22, 125, 184);
+    width: 168px;
+    margin: 15px;
+    border-radius: 3px;
+    height: 35px;
+
+} 
+.blog-button11{
+    background-color: rgb(22, 184, 84);
+    width: 168px;
+    margin: 15px;
+    border-radius: 3px;
+    height: 35px;
+
+}
+
+.button {
+    display: none;
+}
+
+/* transfer and match schedule style  */
+
+.transfer-details,.match-details{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}
+.transfer-detail,.match-detail{
+    padding: 14px;
+    margin: 30px;
+}
+.transfer-detail>p{
+    color: #787885;
+    height: 61px;
+    font-size: 14px;
+}
+.vs-flag{
+    display: flex;
+}
+
+
+/* footer style  */
+.footer-content{
+    text-align: center;
+    margin-top: 100px;
+    padding: 20px;
+    
+}
+
+.services>ul>li{
+    list-style-type: none;
+    display:inline-block;
+    padding: 33px;
+}
+footer{
+    background-color: #0A0826;
+    color: white;
+}
+
+
+/* ---------------------
+Media queries
+------------------------ */
+
+/* Mobile devices */
+@media only screen and (max-width:767px) {
+    .headers{
+       flex-direction: column;
+       
+    }
+    .banner-title {
+        font-size: 1.5rem;
+        width: 200px;
+    }
+    .transfer{
+       
+        flex-direction: column;
+        width: min-content;
+        height: min-content;
+        
+    }
+    .schedule{
+        background-color: transparent;
+    }
+    .transfer-details,.match-details{
+        grid-template-columns: repeat(1,1fr);
+        
+    }
+    .second-section,.schedule{
+        display: inline;
+    }
+   .button {
+       display: none;
+   }
+
+    
+}
+/* ---------------------
+Media queries
+------------------------ */
+
+/* TABLET devices */
+@media only screen and (min-width:768px) and (max-width:1023px) {
+    .headers{
+        flex-direction: column;
+        
+     }
+     .banner-title {
+        font-size: 1.5rem;
+        width: 200px;
+    }
+    .banner-text {
+        color: #fff;
+        font-size: 16px;
+    }
+     .schedule{
+        background-color: transparent;
+    }
+     .transfer{
+        
+         flex-direction: column;
+         width: min-content;
+         height: min-content;
+     }
+     .transfer-details,.match-details{
+         grid-template-columns: repeat(2,1fr);
+         
+     }
+     .second-section,.schedule{
+         display: inline;
+     }
+     .schedule-blog-part{
+         display: flex;
+     }
+     .button {
+        background-color: #4CAF50;
+        border: none;
+        color: white;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        cursor: pointer;
+      }
+ 
+}
+ 
